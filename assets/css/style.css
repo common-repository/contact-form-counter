@@ -1,0 +1,78 @@
+
+
+ #the-list {
+  width: 600px;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+#the-list > tr {
+  width: calc(100% / 3);
+  display: inline-block;
+}
+
+#the-list > tr h2 {
+  font-size: 20px;
+}
+
+span.mcf_indent {
+    display: block;
+    padding-bottom: 8px;
+}
+
+
+.mcf_tooltip {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .mcf_tooltip .mcf_tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .mcf_tooltip .mcf_tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .mcf_tooltip:hover .mcf_tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #the-list > tr:hover{
+    -webkit-box-shadow: 3px 3px 15px -1px rgba(186,173,186,0.72);
+    -moz-box-shadow: 3px 3px 15px -1px rgba(186,173,186,0.72);
+    box-shadow: 3px 3px 15px -1px rgba(186,173,186,0.72)
+}
+#the-list > tr{
+  transition: all 1s ease;
+}
+span.sp_contact_branding {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 7px;
+  color: #135e96;
+  font-weight: bold;
+}
